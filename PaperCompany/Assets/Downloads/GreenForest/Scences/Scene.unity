@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.21994957, g: 0.27671656, b: 0.3399904, a: 1}
+  m_IndirectSpecularColor: {r: 0.6914904, g: 0.9164736, b: 1.128677, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &4
 LightmapSettings:
@@ -803,9 +803,9 @@ WindZone:
   m_Mode: 0
   m_Radius: 20
   m_WindMain: 0.45
-  m_WindTurbulence: 1
-  m_WindPulseMagnitude: 1
-  m_WindPulseFrequency: 1
+  m_WindTurbulence: 0.1
+  m_WindPulseMagnitude: 0.8
+  m_WindPulseFrequency: 0.5
 --- !u!4 &945520836
 Transform:
   m_ObjectHideFlags: 0
