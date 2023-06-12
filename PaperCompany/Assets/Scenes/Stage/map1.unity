@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.6280229, g: 0.8323207, b: 1.0257182, a: 1}
+  m_IndirectSpecularColor: {r: 0.60175323, g: 0.7972256, b: 0.9827779, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -221,8 +221,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startTime: 0
-  moveRange: 4
-  moveSpeed: 3
+  moveRange: 3
+  moveSpeed: 2
 --- !u!1001 &29365215
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -740,8 +740,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startTime: 0
-  moveRange: 5
-  moveSpeed: 2
+  moveRange: 4
+  moveSpeed: 1
 --- !u!1 &160289535
 GameObject:
   m_ObjectHideFlags: 0
@@ -1106,8 +1106,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startTime: 0
-  moveRange: 3
-  moveSpeed: 2
+  moveRange: 2
+  moveSpeed: 1
 --- !u!1001 &330854166
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1346,8 +1346,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startTime: 0
-  moveRange: 4
-  moveSpeed: 3
+  moveRange: 3
+  moveSpeed: 2
 --- !u!1001 &367260795
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1988,7 +1988,7 @@ MonoBehaviour:
   - {fileID: 138904441}
   - {fileID: 355641108}
   - {fileID: 6401763}
-  count: 100
+  count: 30
 --- !u!4 &560667934
 Transform:
   m_ObjectHideFlags: 0
@@ -2336,8 +2336,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startTime: 0
-  moveRange: 3
-  moveSpeed: 1
+  moveRange: 2
+  moveSpeed: 0.5
 --- !u!1 &651571739
 GameObject:
   m_ObjectHideFlags: 0
@@ -2436,8 +2436,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startTime: 0
-  moveRange: 3
-  moveSpeed: 1
+  moveRange: 2
+  moveSpeed: 0.5
 --- !u!1001 &684517662
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2614,8 +2614,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startTime: 0
-  moveRange: 5
-  moveSpeed: 2
+  moveRange: 4
+  moveSpeed: 1
 --- !u!1001 &743394091
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3975,8 +3975,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startTime: 0
-  moveRange: 3
-  moveSpeed: 2
+  moveRange: 2
+  moveSpeed: 1
 --- !u!1001 &1438557463
 PrefabInstance:
   m_ObjectHideFlags: 0
