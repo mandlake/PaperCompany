@@ -27,6 +27,10 @@ public class WaterStreamController : MonoBehaviour
             {
                 score = 10;
             }
+            if (hitObj.gameObject.layer == 11)  // 적이 곰일 때
+            {
+                score = 30;
+            }
             target.OnDamage(10, score);
         }
     }
