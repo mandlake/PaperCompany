@@ -17,12 +17,20 @@ public class DialogueManager : MonoBehaviour
 
     public GameObject WatchInfo;
     public GameObject WatchCall;
+    public GameObject WatchTxT;
 
     bool isDialogue = false;    // 대화중일 경우 true
     bool isNext = false;    // 특정 키 입력 대기
 
     int lineCount = 0;  // 대화 카운트
     int contextCount = 0;   // 대사 카운트
+
+    void Start()
+    {
+        WatchInfo.SetActive(false);
+        WatchTxT.SetActive(false);
+        WatchCall.SetActive(true);
+    }
 
     void Update()
     {
@@ -85,6 +93,13 @@ public class DialogueManager : MonoBehaviour
         t_ReplaceText2 = t_ReplaceText2.Replace("물음표", "???");
         txt_Name.text = t_ReplaceText2;
 
+        Debug.Log(lineCount);
+        Debug.Log(contextCount);
+        if (contextCount == 1 && lineCount == 8)
+        {
+            waterGun.SetActive(true);
+        }
+
         isNext = true;
         yield return null;
     }
@@ -93,6 +108,7 @@ public class DialogueManager : MonoBehaviour
     {
         Canvas.SetActive(p_flag);
         WatchInfo.SetActive(!p_flag);
+        WatchTxT.SetActive(!p_flag);
         WatchCall.SetActive(p_flag);
     }
 }
