@@ -124,39 +124,31 @@ public class WaterGunController : MonoBehaviour
 
         squirtStatus = true;
 
-        //here are the functions controlling the squirting particle effect used when firing the gun
-        //the particle system attrbutes are influenced by water pressure
         var streamRate = streamEM.rate;
         var sprayRate = sprayEM.rate;
         var streamSprayRate = streamSprayEM.rate;
         var streamSprayShape = streamSpray.shape;
 
-        //stream color and alpha variables
         float streamColorAlpha = (pressure / 15);
         Vector4 streamColor = new Vector4(255, 255, 255, streamColorAlpha);
 
-        //stream particle system functions
         stream.startSpeed = pressure * 2;
         stream.startSize = (pressure / 10);
         stream.startColor = streamColor;
         streamRate.constantMax = pressure * 50;
 
-        //spray particle system functions
         spray.startSpeed = pressure / 8;
         spray.startSize = (pressure / 5);
         sprayRate.constantMax = pressure * 5;
 
-        //streamSpray particle system functions
         streamSpray.startSpeed = pressure * 2;
         streamSpray.startSize = (pressure / 100);
         streamSprayRate.constantMax = pressure * 10;
         streamSprayShape.angle = (pressure / 100);
 
-        //splash1 particle system functions
         splash1.startSize = pressure / 6;
         splash1.startColor = new Vector4(splash1.startColor.r, splash1.startColor.g, splash1.startColor.b, streamColorAlpha);
 
-        //splash1 particle system functions
         splash2.startSize = Random.Range(0.01f, (pressure / 40));
         splash2.startColor = new Vector4(splash2.startColor.r, splash2.startColor.g, splash2.startColor.b, streamColorAlpha);
 
